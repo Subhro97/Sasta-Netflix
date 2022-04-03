@@ -1,0 +1,665 @@
+#watchTV-card {
+  min-width: 320px;
+  color: #fff;
+  border-bottom: 8px solid #222;
+  padding: 50px 5%;
+
+  .watchTV-container {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .watchTV-heading {
+      position: relative;
+      z-index: 1;
+      h1 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 19px;
+        padding: 0 3%;
+      }
+
+      @media (min-width: 550px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        h2 {
+          font-size: 1.3rem;
+          margin: 0.75rem 0 0.25rem;
+          padding: 0;
+        }
+      }
+
+      @media (min-width: 949px) {
+        width: 54%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 4rem 0 0;
+
+        h1 {
+          font-size: 3.125rem;
+          text-align: left;
+        }
+
+        h2 {
+          font-size: 1.625rem;
+          text-align: left;
+        }
+      }
+    }
+
+    .watchTV-video {
+      position: relative;
+
+      .watchTV-img {
+        position: relative;
+        margin: -10% 0 0 0;
+        & > img {
+          width: 100%;
+          height: auto;
+        }
+        .watchTV-playback {
+          position: absolute;
+          transform: translate(-11%, -105.8%) scale(0.58);
+          z-index: -1;
+          width: 127%;
+          height: 95%;
+
+          video {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+          }
+        }
+        @media (min-width: 949px) {
+          margin: -10% -5% -5% 0;
+        }
+      }
+
+      @media (min-width: 949px) {
+        width: 46%;
+      }
+    }
+
+    @media (min-width: 949px) {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 550px) {
+    padding: 70px 45px;
+  }
+}
+
+#download-card {
+  min-width: 320px;
+  color: #fff;
+  padding: 50px 5%;
+  border-bottom: 8px solid #222;
+
+  .download-container {
+    .download-header {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+
+      h1 {
+        font-size: 1.625rem;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 1.125rem;
+        margin: 0.75em 0 0.25em;
+      }
+
+      @media (min-width: 550px) and (max-width: 949px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+        h2 {
+          font-size: 1.25rem;
+        }
+      }
+
+      @media (min-width: 949px) {
+        text-align: left;
+        margin: auto;
+        width: 52%;
+        padding: 0 0 0 4.2rem;
+
+        h1 {
+          font-size: 3.125rem;
+        }
+
+        h2 {
+          font-size: 1.625rem;
+        }
+      }
+    }
+
+    .download-animation {
+      position: relative;
+      margin: -3% 0;
+
+      img {
+        width: 100%;
+      }
+      .animation-container {
+        border: 2px solid rgba(255, 255, 255, 0.25);
+        display: flex;
+        width: 65.4%;
+        padding: 6px;
+        border-radius: 0.8rem;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 84%;
+        left: 50%;
+        min-width: 16rem;
+        background: black;
+
+        .animation-img {
+          padding-left: 0.3rem;
+
+          img {
+            width: 34.28px;
+            height: 48px;
+          }
+        }
+
+        .animation-txt {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          margin: 0 0 0 1rem;
+          .text-1 {
+            font-weight: 700;
+            font-size: 0.9rem;
+          }
+          .text-2 {
+            font-size: 0.8rem;
+            color: #0071eb;
+          }
+        }
+
+        &::after {
+          content: "";
+          background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+            no-repeat;
+          width: 48px;
+          height: 48px;
+          background-size: fit;
+          background-position: center;
+          background-size: cover;
+          margin-left: auto;
+        }
+        @media (min-width: 550px) and (max-width: 949px) {
+          .animation-img {
+            img {
+              width: 45.7px;
+              height: 64px;
+            }
+          }
+
+          .animation-txt {
+            .text-1 {
+              font-size: 1rem;
+            }
+            .text-2 {
+              font-size: 0.9rem;
+            }
+          }
+
+          &::after {
+            margin: auto 0 auto auto;
+          }
+        }
+
+        @media (min-width: 949px) {
+          .animation-img {
+            img {
+              width: 51.42px;
+              height: 72px;
+            }
+          }
+
+          .animation-txt {
+            margin: auto 0 auto 1rem;
+            .text-1 {
+              font-size: 1rem;
+            }
+            .text-2 {
+              font-size: 1rem;
+            }
+          }
+
+          &::after {
+            margin: auto 0 auto auto;
+          }
+        }
+      }
+
+      @media (min-width: 949px) {
+        width: 48%;
+        margin: -3% 0 -4% -6.5%;
+      }
+    }
+
+    @media (min-width: 949px) {
+      display: flex;
+      flex-direction: row-reverse;
+      margin: 0 auto;
+      max-width: 1100px;
+    }
+  }
+
+  @media (min-width: 949px) {
+    padding: 70px 45px;
+  }
+}
+
+#watch-every-card {
+  border-bottom: 8px solid #222;
+  color: #fff;
+  padding: 50px 5%;
+
+  .watch-every-container {
+    .watch-every-header {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+
+      h1 {
+        font-size: 1.625rem;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 1.225rem;
+      }
+
+      @media (min-width: 550px) and (max-width: 949px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        h2 {
+          font-size: 1.25rem;
+        }
+      }
+
+      @media (min-width: 949px) {
+        text-align: left;
+        margin: auto;
+        width: 52%;
+
+        h1 {
+          font-size: 3.125rem;
+        }
+
+        h2 {
+          font-size: 1.625rem;
+        }
+      }
+    }
+
+    .watch-every-playback {
+      position: relative;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+
+      .watch-every-video {
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1.2);
+        z-index: -1;
+
+        video {
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 949px) {
+        width: 48%;
+        margin: -2.5% 0% -1% 0;
+      }
+    }
+    @media (min-width: 949px) {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+    }
+  }
+
+  @media (min-width: 550px) {
+    padding: 70px 45px;
+  }
+}
+
+#children-card {
+  border-bottom: 8px solid #222;
+  padding: 50px 5%;
+  color: #fff;
+
+  .children-container {
+    .children-header {
+      position: relative;
+      text-align: center;
+
+      h1 {
+        font-size: 1.625rem;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 1.125rem;
+      }
+
+      @media (min-width: 550px) and (max-width: 949px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        h2 {
+          font-size: 1.35rem;
+        }
+      }
+
+      @media (min-width: 949px) {
+        text-align: left;
+        margin: auto;
+        padding-left: 3rem;
+        width: 52%;
+
+        h1 {
+          font-size: 3.125rem;
+        }
+
+        h2 {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    .children-img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+
+      @media (min-width: 949px) {
+        width: 48%;
+      }
+    }
+
+    @media (min-width: 949px) {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+#netflix-faq-card {
+  border-bottom: 8px solid #222;
+  padding: 50px 0;
+  .netflix-faq-container {
+    .netflix-faq-header {
+      p {
+        text-align: center;
+        color: #fff;
+        font-size: 1.625rem;
+        font-weight: 700;
+
+        @media (min-width: 749px) and (max-width: 949px) {
+          font-size: 2.5rem;
+        }
+
+        @media (min-width: 949px) {
+          font-size: 3.125rem;
+        }
+      }
+    }
+    .accordion {
+      max-width: 815px;
+      margin: 2rem auto;
+
+      .accordion-item {
+        margin-bottom: 8px;
+        background: black;
+        border: 0;
+        h2 {
+          button {
+            background-color: #303030;
+            color: #fff;
+            box-shadow: none;
+            margin-bottom: 1px;
+            font-size: 19.5px;
+
+            &:not(.collapsed)::after {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='thin-x' viewBox='0 0 26 26' class='' focusable='true' style='fill: white;'%3E%3Cpath d='M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z'%3E%3C/path%3E%3C/svg%3E");
+              transform: rotate(-180deg);
+            }
+
+            &::after {
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='thin-x' viewBox='0 0 26 26' class='' focusable='true' style='fill: white;'%3E%3Cpath d='M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z'%3E%3C/path%3E%3C/svg%3E");
+              transform: rotate(-45deg);
+            }
+
+            @media (min-width: 949px) {
+              font-size: 1.825rem;
+              padding: 1.2rem;
+            }
+          }
+        }
+
+        .accordion-body {
+          background-color: #303030;
+          color: #fff;
+          font-size: 1.225rem;
+
+          @media (min-wudth: 550px) {
+            width: 90%;
+          }
+
+          @media (min-width: 949px) {
+            font-size: 1.625rem;
+          }
+        }
+      }
+    }
+
+    .hero-form {
+      margin-top: 1.25rem;
+      max-width: 815px;
+      margin: auto;
+      h3 {
+        font-size: 1.225rem;
+        color: #fff;
+        padding: 0 10%;
+        text-align: center;
+
+        @media (min-width: 550px) and (max-width: 750px) {
+          font-size: 1.28rem;
+          padding: 1rem 2% 0rem;
+        }
+
+        @media (min-width: 750px) and (max-width: 949px) {
+          font-size: 23px;
+        }
+
+        @media (min-width: 949px) {
+          font-size: 1.3rem;
+          padding: 1rem 2rem 0.6rem;
+        }
+      }
+      .form-input {
+        width: 93.2%;
+        height: 48px;
+        margin-right: 1px;
+        margin-bottom: 10px;
+
+        .email-input {
+          width: 100%;
+          height: 100%;
+          padding: 0px 0px 0px 12px;
+          font-size: 1.1rem;
+          outline: none;
+
+          &::placeholder {
+            color: transparent;
+          }
+
+          @media (min-width: 550px) {
+            padding: 0px 0px 0px 12px;
+          }
+        }
+
+        .email-input:focus + .email-label,
+        .email-input:not(:placeholder-shown) + .email-label {
+          transform: translate(16%, -3rem);
+          font-size: 0.8rem;
+
+          @media (min-width: 550px) and (max-width: 750px) {
+            transform: translate(16%, -3rem);
+          }
+
+          @media (min-width: 750px) {
+            transform: translate(16%, -3.5rem);
+            font-weight: 700;
+          }
+        }
+
+        .email-label {
+          color: #8c8c8c;
+          display: block;
+
+          font-size: 0.875rem;
+          pointer-events: none;
+          width: max-content;
+          transition: font 0.1s ease, bottom 0.1s ease, right 0.1s ease,
+            transform 0.1s ease, -webkit-transform 0.1s ease,
+            -moz-transform 0.1s ease, -o-transform 0.1s ease;
+          transform: translate(18%, -2.2rem);
+          transform-origin: 0 0;
+
+          @media (min-width: 550px) and (max-width: 750px) {
+            transform: translate(10%, -2.2rem);
+            font-size: 14px;
+          }
+
+          @media (min-width: 750px) {
+            transform: translate(10%, -2.7rem);
+            font-size: 1rem;
+          }
+        }
+
+        @media (min-width: 550px) and (max-width: 750px) {
+          width: 100%;
+          height: 48px;
+        }
+
+        @media (min-width: 750px) and (max-width: 992px) {
+          width: 100%;
+          height: 60px;
+        }
+        @media (min-width: 992px) {
+          width: 60%;
+          height: 60px;
+        }
+      }
+
+      .form-btn {
+        border: none;
+        color: #fff;
+        background: var(--color);
+        position: relative;
+        width: 131.92px;
+        height: 40px;
+        font-size: 1rem;
+        padding-left: 0px;
+        text-align: center;
+        border-radius: 3%;
+
+        &::after,
+        &::before {
+          --size: 0.35rem;
+          content: "";
+
+          position: absolute;
+          width: 0;
+          height: 0;
+
+          top: 0.85rem;
+
+          border-bottom: var(--size) solid transparent;
+          border-top: var(--size) solid transparent;
+          border-right: var(--size) solid transparent;
+        }
+
+        &::before {
+          border-left: var(--size) solid var(--color);
+          left: 81.8%;
+          z-index: 1;
+        }
+
+        &::after {
+          border-left: var(--size) solid rgba(white, 0.85);
+          left: 83%;
+        }
+
+        @media (min-width: 550px) and (max-width: 750px) {
+          height: 40px;
+        }
+
+        @media (min-width: 992px) {
+          width: 214.04px;
+          height: 60px;
+          font-size: 1.625rem;
+          padding-left: 2.125rem;
+          text-align: left;
+
+          &::after,
+          &::before {
+            --size: 0.55rem;
+            top: 1.3rem;
+          }
+          &::before {
+            left: 78.8%;
+          }
+
+          &::after {
+            left: 80%;
+          }
+        }
+      }
+
+      @media (min-width: 750px) and (max-width: 949px) {
+        width: 78%;
+        margin: 0 auto;
+      }
+
+      @media (min-width: 550px) and (max-width: 750px) {
+        width: 85%;
+      }
+    }
+  }
+
+  @media (min-width: 550px) {
+    padding: 70px 45px;
+  }
+}

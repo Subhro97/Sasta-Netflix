@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch, Redirect } from "react-router-dom";
+import { connect } from "react-redux";
 
-function App() {
+import Landing from "./components/pages/Landing";
+import Signup from "./components/pages/Signup";
+import Browse from "./components/pages/Browse";
+
+function App(props) {
+  let status = localStorage.getItem("logStatus");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route path="/" exact>
+        <Redirect to="/in/" />
+      </Route>
+      <Route path="/in/" exact>
+        {status ? <Redirect to="/browse" /> : <Landing />}
+      </Route>
+      <Route path="/in/login">
+        {status ? <Redirect to="/browse" /> : <Signup />}
+      </Route>
+      <Route path="/browse">
+        {status ? <Browse /> : <Redirect to="/in" />}
+      </Route>
+      <Route path="*"></Route>
+    </Switch>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    logStatus: state.auth.logStatus,
+  };
+};
+
+export default connect(mapStateToProps, null)(App);

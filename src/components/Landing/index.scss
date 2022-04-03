@@ -1,0 +1,338 @@
+#hero-card {
+  min-width: 320px;
+  min-height: 420.39px;
+  height: 519.391px;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/6dea7743-5586-45d1-89a2-9569b1bb0340/b8bbb6c3-80f1-4648-8527-521bd3bd8781/IN-en-20220207-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom 30%;
+  border-bottom: 8px solid #222;
+
+  .hero-card-logo {
+    padding: 2.3125rem 5% 0;
+    width: 100%;
+    max-width: 100% !important;
+    margin: 0;
+
+    & > div {
+      margin-left: auto;
+      margin-right: 0rem;
+
+      @media (min-width: 550px) and (max-width: 750px) {
+        margin-right: 1.2rem;
+      }
+
+      @media (min-width: 750px) and (max-width: 992px) {
+        margin-right: 1.2rem;
+      }
+
+      @media (min-width: 992px) {
+        margin-right: 1.5rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      padding: 2.3125rem 4% 0;
+    }
+  }
+
+  .lang-box {
+    .fa-globe {
+      color: #fff;
+      position: absolute;
+      transform: translate(30%, 30%);
+      pointer-events: none;
+
+      @media (min-width: 550px) {
+        transform: translate(50%, 55%);
+      }
+    }
+
+    .select-lang-box {
+      width: 5.875rem;
+      height: 1.761rem;
+      font-size: 1rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      line-height: 1.3rem;
+      padding: 0 0 0 1.5rem;
+      color: #fff;
+      border-width: 1px;
+      border-color: rgba(white, 0.85);
+      border-radius: 4%;
+      appearance: none; //to hide default arrow
+
+      @media (min-width: 550px) {
+        width: 6.6rem;
+        height: 2.26rem;
+        font-size: 1.1rem;
+        padding: 0 0 0 1.65rem;
+      }
+    }
+
+    &::after {
+      --size: 0.3rem;
+
+      content: "";
+      width: 0;
+      height: 0;
+      position: relative;
+
+      left: -14.7%;
+      top: 0.55rem;
+
+      border-left: var(--size) solid transparent;
+      border-right: var(--size) solid transparent;
+      border-bottom: var(--size) solid transparent;
+      border-top: var(--size) solid rgba(white, 0.85);
+
+      pointer-events: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    background-color: var(--color);
+    color: #fff;
+    padding: 0.1rem 0.48rem;
+    border-radius: 5%;
+    font-size: 1rem;
+
+    @media (min-width: 550px) {
+      padding: 0.2375rem 1.0625rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1278px;
+    }
+  }
+
+  .hero-card-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 5rem;
+
+    & > div {
+      max-width: 936px;
+      margin: 0 auto;
+    }
+
+    & > div > h1 {
+      font-weight: bold;
+      font-size: 1.75rem;
+      padding: 0 8%;
+
+      @media (min-width: 550px) and (max-width: 992px) {
+        font-size: 3.125rem;
+        padding: 0;
+      }
+
+      @media (min-width: 992px) {
+        font-size: 3.125rem;
+        padding: 0 16%;
+      }
+    }
+
+    & > div > h2 {
+      font-size: 1.125rem;
+
+      @media (min-width: 550px) and (max-width: 992px) {
+        font-size: 1.725rem;
+      }
+
+      @media (min-width: 992px) {
+        font-size: 1.725rem;
+      }
+    }
+
+    & > div > h3 {
+      padding: 1rem 2rem 1.125rem;
+      font-size: 1.125rem;
+
+      @media (min-width: 550px) and (max-width: 750px) {
+        font-size: 1.28rem;
+        padding: 1rem 2% 1.125rem;
+      }
+
+      @media (min-width: 750px) and (max-width: 992px) {
+        font-size: 23px;
+      }
+
+      @media (min-width: 992px) {
+        font-size: 1.25rem;
+        padding: 1rem 2rem 0.6rem;
+      }
+    }
+
+    .hero-form {
+      .form-input {
+        width: 93.2%;
+        height: 48px;
+        margin-right: 1px;
+        margin-bottom: 10px;
+
+        .email-input {
+          width: 100%;
+          height: 100%;
+          padding: 0px 0px 0px 12px;
+          font-size: 1.1rem;
+          outline: none;
+
+          &::placeholder {
+            color: transparent;
+          }
+
+          @media (min-width: 550px) {
+            padding: 0px 0px 0px 12px;
+          }
+        }
+
+        .email-input:focus + .email-label,
+        .email-input:not(:placeholder-shown) + .email-label {
+          transform: translate(16%, -3rem);
+          font-size: 0.8rem;
+
+          @media (min-width: 550px) and (max-width: 750px) {
+            transform: translate(16%, -3rem);
+          }
+
+          @media (min-width: 750px) {
+            transform: translate(16%, -3.5rem);
+            font-weight: 700;
+          }
+        }
+
+        .email-label {
+          color: #8c8c8c;
+          display: block;
+
+          font-size: 0.875rem;
+          pointer-events: none;
+          width: max-content;
+          transition: font 0.1s ease, bottom 0.1s ease, right 0.1s ease,
+            transform 0.1s ease, -webkit-transform 0.1s ease,
+            -moz-transform 0.1s ease, -o-transform 0.1s ease;
+          transform: translate(18%, -2.2rem);
+          transform-origin: 0 0;
+
+          @media (min-width: 550px) and (max-width: 750px) {
+            transform: translate(10%, -2.2rem);
+            font-size: 14px;
+          }
+
+          @media (min-width: 750px) {
+            transform: translate(10%, -2.7rem);
+            font-size: 1rem;
+          }
+        }
+
+        @media (min-width: 550px) and (max-width: 750px) {
+          width: 100%;
+          height: 48px;
+        }
+
+        @media (min-width: 750px) and (max-width: 992px) {
+          width: 100%;
+          height: 60px;
+        }
+        @media (min-width: 992px) {
+          width: 48%;
+          height: 60px;
+        }
+      }
+
+      .form-btn {
+        border: none;
+        color: #fff;
+        background: var(--color);
+        position: relative;
+        width: 131.92px;
+        height: 40px;
+        font-size: 1rem;
+        padding-left: 0px;
+        text-align: center;
+        border-radius: 3%;
+
+        &::after,
+        &::before {
+          --size: 0.35rem;
+          content: "";
+
+          position: absolute;
+          width: 0;
+          height: 0;
+
+          top: 0.85rem;
+
+          border-bottom: var(--size) solid transparent;
+          border-top: var(--size) solid transparent;
+          border-right: var(--size) solid transparent;
+        }
+
+        &::before {
+          border-left: var(--size) solid var(--color);
+          left: 81.8%;
+          z-index: 1;
+        }
+
+        &::after {
+          border-left: var(--size) solid rgba(white, 0.85);
+          left: 83%;
+        }
+
+        @media (min-width: 550px) and (max-width: 750px) {
+          height: 40px;
+        }
+
+        @media (min-width: 992px) {
+          width: 214.04px;
+          height: 60px;
+          font-size: 1.625rem;
+          padding-left: 2.125rem;
+          text-align: left;
+
+          &::after,
+          &::before {
+            --size: 0.55rem;
+            top: 1.3rem;
+          }
+          &::before {
+            left: 78.8%;
+          }
+
+          &::after {
+            left: 80%;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 550px) and (max-width: 750px) {
+      padding: 8rem 4% 0;
+    }
+
+    @media (min-width: 750px) and (max-width: 992px) {
+      padding: 8rem 8% 0;
+    }
+
+    @media (min-width: 992px) {
+      padding-top: 9.4rem;
+    }
+  }
+
+  @media (min-width: 550px) {
+    height: 706.984px;
+  }
+
+  @media (min-width: 750px) and (max-width: 992px) {
+    height: 733px;
+  }
+}

@@ -1,0 +1,28 @@
+@import url("http://fonts.cdnfonts.com/css/terafik");
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  font-family: "Terafik", sans-serif;
+}
+
+body {
+  min-width: 320px;
+  height:100%;
+  margin: 0;
+  font-family: "Terafik", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  direction: ltr;
+  background-color: #141414;
+  color: #333;
+}
+
+:root {
+  --color: #e50914;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

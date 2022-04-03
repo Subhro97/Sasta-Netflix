@@ -1,0 +1,237 @@
+.border-select {
+  border-left: 3px solid #e50914;
+}
+
+.nav-box-open {
+  .menu-nav-box {
+    transform: translateX(0) !important;
+  }
+}
+
+.pinning-header {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url("https://assets.nflxext.com/ffe/siteui/akira/fallback/header_gradient.png");
+
+  .pinning-header-container {
+    width: 100%;
+    padding: 0px 20px;
+
+    .menu-navigation {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      & > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo-box {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 4%;
+
+        .svg-icon-netflix-logo {
+          width: 84px;
+          height: 24px;
+
+          #netflix-logo {
+            fill: #e50914;
+          }
+
+          @media (min-width: 992px) {
+            width: 92.5px;
+            height: 31px;
+          }
+        }
+
+        @media (min-width: 950px) {
+          height: 68px;
+        }
+      }
+
+      .show-modal-bg {
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+      }
+
+      .close-modal-bg {
+        display: none;
+      }
+
+      .menu-nav-box {
+        position: fixed;
+        left: 0px;
+        top: 50px;
+        background: #000;
+        color: #999;
+
+        width: 250px;
+        height: 100%;
+        overflow-y: auto;
+
+        transform: translateX(-250px);
+        transition: transform 150ms cubic-bezier(0.5, 0, 0.1, 1);
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        ol {
+          list-style: none;
+          padding: 10px 0;
+          border-bottom: 1px solid #333;
+          margin: 0 0 5px 0;
+          font-weight: 700;
+
+          .list-item-profile {
+            display: flex;
+            padding-left: 20px;
+            margin-bottom: 10px;
+
+            img {
+              height: 2rem;
+              width: 2rem;
+            }
+
+            p {
+              display: flex;
+              flex-direction: column;
+              margin: 4px 0 0 8px;
+              line-height: 15px;
+
+              .switch {
+                font-size: 0.7rem;
+              }
+            }
+
+            @media (min-width: 501px) {
+              padding-left: 30px;
+            }
+          }
+
+          .list-items {
+            padding-left: 20px;
+            margin-bottom: 10px;
+            line-height: 1;
+
+            @media (min-width: 501px) {
+              padding-left: 30px;
+            }
+          }
+        }
+
+        .menu-sections {
+          border: 0;
+          padding: 0;
+          margin: 0;
+
+          li {
+            margin: 0;
+            line-height: 2;
+          }
+        }
+
+        .menu-genres {
+          border: 0;
+          padding: 0;
+          margin-bottom: 20px;
+
+          li {
+            margin: 0;
+            line-height: 2;
+          }
+        }
+      }
+
+      .header-more {
+        height: 24px;
+        margin-right: 15px;
+        margin-left: 7px;
+      }
+
+      .header-search-input {
+        width: 7.15rem;
+        color: #fff;
+        font-size: 1rem;
+        padding: 2px 0.5rem;
+        background: url("https://assets.nflxext.com/ffe/siteui/akira/fallback/secondary_button_hover_background.png");
+        border: 1px solid #ccc;
+        margin-right: 2px;
+
+        @media (min-width: 501px) {
+          width: 11rem;
+        }
+      }
+    }
+
+    @media (min-width: 501px) {
+      padding: 0px 30px;
+    }
+  }
+}
+
+.mainView {
+  .content-box {
+    .first-row {
+      margin-top: 60px;
+
+      @media (min-width: 501px) {
+        margin-top: 100px;
+      }
+    }
+
+    .content-row {
+      padding-left: 20px;
+      h2 {
+        color: #999;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 0 0 0.5rem 0;
+      }
+      .slick-slider {
+        max-height: 135px;
+        button {
+          display: none !important;
+        }
+
+        .slick-list {
+          .slick-track {
+            max-height: 135px;
+            .slick-slide {
+              margin-right: 2px;
+            }
+          }
+          @media (min-width: 501px) {
+            max-height: 172px;
+          }
+        }
+
+        @media (min-width: 501px) {
+          max-height: 172px;
+        }
+      }
+    }
+  }
+}
+
+.footer-container {
+  li {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+}
