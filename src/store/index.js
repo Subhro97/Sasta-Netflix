@@ -5,7 +5,7 @@ import thunk from "redux-thunk";
 import createRootReducers from "./reducers";
 import { routerMiddleware } from "connected-react-router";
 
-export const history = createBrowserHistory({ basename: 'https://subhro97.github.io/Sasta-Netflix/'});
+export const history = createBrowserHistory({basename:'/Sasta-Netflix/'});
 
 export default function configureStore(preloadedState) {
   const store = createStore(
