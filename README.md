@@ -1,4 +1,4 @@
-Link to Preview of the Sasta Netflix website: https://tubular-churros-ba7370.netlify.app/in
+
 
 
 # Getting Started with Create React App
