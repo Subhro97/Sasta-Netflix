@@ -15,9 +15,12 @@ const store = configureStore({});
 
 ReactDOM.render(
   <Provider store={store} context={ReactReduxContext}>
-    <BrowserRouter basename='https://subhro97.github.io/Sasta-Netflix/'>
+    <ConnectedRouter
+      history={history}
+      context={ReactReduxContext}
+    >
       <App />
-    </BrowserRouter>
+    </ConnectedRouter>
   </Provider>,
   document.getElementById('root')
 );
