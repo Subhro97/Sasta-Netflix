@@ -19,7 +19,7 @@ const HeroCard = () => {
             <option value="हिन्दी">हिन्दी</option>
           </select>
         </div>
-        <Link to="/in/login">Sign In</Link>
+        <Link to="/Sasta-Netflix/in/login">Sign In</Link>
       </div>
 
       <div className="container hero-card-text">

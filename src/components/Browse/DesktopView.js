@@ -57,7 +57,6 @@ const DesktopView = (props) => {
     setShow((show) => !show);
   };
 
-  console.log(props.logStatus);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries, observer) => {
@@ -1110,7 +1109,7 @@ const mapDispatchToProps = (dispatch) => {
     logout: () => {
       localStorage.removeItem("logStatus")
       dispatch(signOut());
-      dispatch(push("/in"));
+      dispatch(push("/Sasta-Netflix/in"));
     },
   };
 };

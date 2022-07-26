@@ -9,17 +9,17 @@ function App(props) {
   let status = localStorage.getItem("logStatus");
   return (
     <Switch>
-      <Route path="/" exact>
-        <Redirect to="/in/" />
+      <Route path="/Sasta-Netflix" exact>
+        <Redirect to="/Sasta-Netflix/in/" />
       </Route>
-      <Route path="/in/" exact>
-        {status ? <Redirect to="/browse" /> : <Landing />}
+      <Route path="/Sasta-Netflix/in/" exact>
+        {status ? <Redirect to="/Sasta-Netflix/browse" /> : <Landing />}
       </Route>
-      <Route path="/in/login">
-        {status ? <Redirect to="/browse" /> : <Signup />}
+      <Route path="/Sasta-Netflix/in/login">
+        {status ? <Redirect to="/Sasta-Netflix/browse" /> : <Signup />}
       </Route>
-      <Route path="/browse">
-        {status ? <Browse /> : <Redirect to="/in" />}
+      <Route path="/Sasta-Netflix/browse">
+        {status ? <Browse /> : <Redirect to="/Sasta-Netflix/in" />}
       </Route>
       <Route path="*"></Route>
     </Switch>

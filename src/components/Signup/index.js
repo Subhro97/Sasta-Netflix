@@ -44,7 +44,7 @@ class SignupPage extends React.Component {
         </div>
 
         <div className="netflix-logo">
-          <Link to="/in/">
+          <Link to="/Sasta-Netflix/in/">
             <Logo />
           </Link>
         </div>
@@ -217,7 +217,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     navigate: () => {
       dispatch(signIn());
-      dispatch(push("/browse"));
+      dispatch(push("/Sasta-Netflix/browse"));
     },
   };
 };
