@@ -49,97 +49,99 @@ class SignupPage extends React.Component {
           </Link>
         </div>
 
-        <div className="login-body">
-          <h1>Sign In</h1>
+        <div class="login-body-outer">
+          <div className="login-body">
+            <h1>Sign In</h1>
 
-          <div className="form-details">
-            <form onSubmit={this.onSubmitHandler.bind(this)}>
-              <div className="details-box">
-                <input
-                  type="email"
-                  placeholder="Enter your Email"
-                  id="email"
-                  ref={this.emailRef}
-                />
-                <label id="email" className="email-label">
-                  Email or phone number
-                </label>
-              </div>
-              <div className="details-box">
-                <input
-                  type="password"
-                  placeholder="Enter your password"
-                  id="password"
-                  ref={this.passRef}
-                />
-                <label htmlFor="password" className="pass-label">
-                  Password
-                </label>
-              </div>
-              <button>Sign In</button>
-
-              <div className="other-box">
-                <div className="check-box">
-                  <input type="checkbox" id="checkbox" checked readOnly />
-                  <label htmlFor="checkbox">
-                    <span>Remember me</span>
+            <div className="form-details">
+              <form onSubmit={this.onSubmitHandler.bind(this)}>
+                <div className="details-box">
+                  <input
+                    type="email"
+                    placeholder="Enter your Email"
+                    id="email"
+                    ref={this.emailRef}
+                  />
+                  <label id="email" className="email-label">
+                    Email or phone number
                   </label>
                 </div>
-                <div className="help-box">
-                  <Link to="#">Need Help?</Link>
+                <div className="details-box">
+                  <input
+                    type="password"
+                    placeholder="Enter your password"
+                    id="password"
+                    ref={this.passRef}
+                  />
+                  <label htmlFor="password" className="pass-label">
+                    Password
+                  </label>
                 </div>
-              </div>
-            </form>
-          </div>
+                <button>Sign In</button>
 
-          <div className="other-form">
-            <div className="fb-form">
-              <form action="" className="fb-login">
-                <button>
-                  <div className="fb-box">
-                    <img
-                      src="https://assets.nflxext.com/ffe/siteui/login/images/FB-f-Logo__blue_57.png"
-                      alt=""
-                    />
-                    <span>Login with facebook</span>
+                <div className="other-box">
+                  <div className="check-box">
+                    <input type="checkbox" id="checkbox" checked readOnly />
+                    <label htmlFor="checkbox">
+                      <span>Remember me</span>
+                    </label>
                   </div>
-                </button>
+                  <div className="help-box">
+                    <Link to="#">Need Help?</Link>
+                  </div>
+                </div>
               </form>
             </div>
 
-            <div className="signup-box">
-              <span>New to Netflix?</span>
-              <Link to="#">Sign up now.</Link>
-            </div>
+            <div className="other-form">
+              <div className="fb-form">
+                <form action="" className="fb-login">
+                  <button>
+                    <div className="fb-box">
+                      <img
+                        src="https://assets.nflxext.com/ffe/siteui/login/images/FB-f-Logo__blue_57.png"
+                        alt=""
+                      />
+                      <span>Login with facebook</span>
+                    </div>
+                  </button>
+                </form>
+              </div>
 
-            <div className="learn-box">
-              <p>
-                <span>
-                  This page is protected by Google reCAPTCHA to ensure you're
-                  not a bot.
-                </span>
-                &nbsp;
-                <Link to="#">Learn More</Link>
-              </p>
+              <div className="signup-box">
+                <span>New to Netflix?</span>
+                <Link to="#">Sign up now.</Link>
+              </div>
 
-              <div>
-                <span>
-                  The information collected by Google reCAPTCHA is subject to
-                  the Google{" "}
-                  <Link
-                    to="https://policies.google.com/privacy"
-                    target="_blank"
-                  >
-                    Privacy Policy
-                  </Link>{" "}
-                  and{" "}
-                  <Link to="https://policies.google.com/terms" target="_blank">
-                    Terms of Service
-                  </Link>
-                  , and is used for providing, maintaining, and improving the
-                  reCAPTCHA service and for general security purposes (it is not
-                  used for personalised advertising by Google).
-                </span>
+              <div className="learn-box">
+                <p>
+                  <span>
+                    This page is protected by Google reCAPTCHA to ensure you're
+                    not a bot.
+                  </span>
+                  &nbsp;
+                  <Link to="#">Learn More</Link>
+                </p>
+
+                <div>
+                  <span>
+                    The information collected by Google reCAPTCHA is subject to
+                    the Google{" "}
+                    <Link
+                      to="https://policies.google.com/privacy"
+                      target="_blank"
+                    >
+                      Privacy Policy
+                    </Link>{" "}
+                    and{" "}
+                    <Link to="https://policies.google.com/terms" target="_blank">
+                      Terms of Service
+                    </Link>
+                    , and is used for providing, maintaining, and improving the
+                    reCAPTCHA service and for general security purposes (it is not
+                    used for personalised advertising by Google).
+                  </span>
+                </div>
               </div>
             </div>
           </div>
